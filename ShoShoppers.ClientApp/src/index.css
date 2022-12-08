@@ -1,0 +1,98 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 12px;
+        height: 15px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: transparent;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #ababab;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #3ba144;
+    }
+
+    .text-transition {
+        opacity: 0;
+        transition: 0.5s;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .text-transition:hover {
+        opacity: 1;
+        transition: 0.5s;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input[type='radio'] {
+        -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid green;
+        border-radius: 50%;
+        outline: none;
+    }
+
+    input[type='radio']:before {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 50%;
+        margin: 25% auto;
+        border-radius: 50%;
+    }
+
+    input[type='radio']:checked:before {
+        background: green;
+    }
+
+    @media screen and (max-width: 639px) {
+        .outline_text {
+            color: white;
+            text-shadow: -1px -1px 0 #000, 2px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+    }
+
+    .book-aniqua {
+        font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    }
+
+    .link-underline {
+        border-bottom-width: 0;
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+        background-size: 0 2px;
+        background-position: 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size .5s ease-in-out;
+    }
+
+    .link-underline-white {
+        background-image: linear-gradient(transparent, transparent), linear-gradient(#white, white)
+    }
+
+    .link-underline:hover {
+        background-size: 100% 2px;
+        background-position: 0 100%
+    }
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin
+Disallow: /order
+Allow: /
+Allow: /individual
+Allow: /pins
+Allow: /shoppers
+
+Sitemap: https://shoshoppers.com/sitemap.xml

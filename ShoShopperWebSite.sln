@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoShoppers.Dal", "ShoShoppers.Dal\ShoShoppers.Dal.csproj", "{57BECB97-929C-4E56-AB6F-46BFA979276E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoShoppers.Bll", "ShoShoppers.Bll\ShoShoppers.Bll.csproj", "{DB057864-B97F-4033-9CAA-6722B303AB53}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ShoShoppers.ClientApp", "ShoShoppers.ClientApp\ShoShoppers.ClientApp.esproj", "{030B2BF0-6B56-4B2C-8954-017BDD625CD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoShoppers.API", "ShoShoppers.API\ShoShoppers.API.csproj", "{9154D768-ECFA-4A84-9970-C65F432F5700}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{674B1AAD-6F32-46F6-A800-7F5FEA37AF4D}"
+	ProjectSection(SolutionItems) = preProject
+		nginx\nginx.Dockerfile = nginx\nginx.Dockerfile
+		nginx\nginx.local.conf = nginx\nginx.local.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{2EFC9B30-B231-4185-99C0-578DB0884AC0}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57BECB97-929C-4E56-AB6F-46BFA979276E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BECB97-929C-4E56-AB6F-46BFA979276E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BECB97-929C-4E56-AB6F-46BFA979276E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BECB97-929C-4E56-AB6F-46BFA979276E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB057864-B97F-4033-9CAA-6722B303AB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB057864-B97F-4033-9CAA-6722B303AB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB057864-B97F-4033-9CAA-6722B303AB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB057864-B97F-4033-9CAA-6722B303AB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030B2BF0-6B56-4B2C-8954-017BDD625CD5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9154D768-ECFA-4A84-9970-C65F432F5700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9154D768-ECFA-4A84-9970-C65F432F5700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9154D768-ECFA-4A84-9970-C65F432F5700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9154D768-ECFA-4A84-9970-C65F432F5700}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E661D8F4-6F36-420C-B4CF-A297A64B75C4}
+	EndGlobalSection
+EndGlobal

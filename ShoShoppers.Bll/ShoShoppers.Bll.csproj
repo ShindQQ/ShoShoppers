@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="11.0.0" />
+        <PackageReference Include="MailBody" Version="1.1.4" />
+        <PackageReference Include="MailKit" Version="3.4.1" />
+        <PackageReference Include="MimeKit" Version="3.4.1" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.20" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ShoShoppers.Dal\ShoShoppers.Dal.csproj" />
+    </ItemGroup>
+
+</Project>
