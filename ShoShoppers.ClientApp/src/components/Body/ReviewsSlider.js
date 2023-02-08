@@ -30,8 +30,8 @@ const ReviewsSlider = ({ reviews }) => {
             </div>
             <div className="h-fit flex flex-row drop-shadow-xl bg-white">
                 <img src={reviews[firstIndex].imageLink} alt="/" loading="lazy" className="h-[500px] w-auto bg-center bg-contain bg-no-repeat shadow-lg m-0 lg:mr-2 sm:h-[600px]" />
-                <img src={reviews[centerIndex].imageLink} alt="/" loading="lazy" className="h-[600px] w-auto bg-center bg-contain bg-no-repeat shadow-lg hidden xl:block" />
-                <img src={reviews[lastIndex].imageLink} alt="/" loading="lazy" className="h-[600px] w-auto bg-center bg-contain bg-no-repeat shadow-lg ml-2 hidden lg:block" />
+                <img src={reviews[centerIndex].imageLink} alt="/" loading="lazy" className="h-[600px] w-auto bg-center bg-contain bg-no-repeat shadow-lg hidden lg:block" />
+                <img src={reviews[lastIndex].imageLink} alt="/" loading="lazy" className="h-[600px] w-auto bg-center bg-contain bg-no-repeat shadow-lg ml-2 hidden xl:block" />
             </div>
             <div className="text-xl cursor-pointer h-[500px] items-center flex justify-center text-black/50 bg-white rounded-r-3xl shadow-xl hover:bg-gray-200 hover:duration-300 duration-300 w-8 sm:h-[600px]"
                 onClick={goToNext}>
